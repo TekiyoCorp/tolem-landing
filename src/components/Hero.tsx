@@ -1,0 +1,87 @@
+"use client";
+
+import { motion } from "framer-motion";
+import DecryptText from "./DecryptText";
+
+export default function Hero() {
+  return (
+    <section className="relative h-screen w-full bg-[#F5F5F5] overflow-hidden">
+      {/* H1 - Centered, slightly towards top */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-x-0 top-[28%] lg:top-[14%] z-20 text-center px-6"
+      >
+        <h1 className="font-display text-[36px] lg:text-[64px] xl:text-[80px] text-[#181818] leading-[0.92] tracking-[-0.03em]">
+          <DecryptText text="L'art de mesurer" delay={300} speed={40} />
+          <br />
+          <DecryptText text="l'instant" delay={500} speed={40} />
+        </h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-4 lg:mt-6 text-[11px] lg:text-[13px] tracking-[0.2em] text-[#181818]/50 uppercase"
+        >
+          <DecryptText text="Horlogerie Française — Besançon" delay={800} speed={20} />
+        </motion.p>
+      </motion.div>
+
+      {/* Micro Infos - Mono */}
+      <div className="absolute top-20 lg:top-24 left-4 lg:left-16 z-20 font-mono text-[8px] lg:text-[10px] text-[#181818]/40 tracking-wider">
+        <span>42MM</span>
+        <span className="mx-1 lg:mx-2">—</span>
+        <span>10.2MM</span>
+      </div>
+
+      <div className="absolute top-20 lg:top-24 right-4 lg:right-16 z-20 font-mono text-[8px] lg:text-[10px] text-[#181818]/40 tracking-wider text-right">
+        <span>TITANIUM GR.5</span>
+      </div>
+
+      <div className="absolute top-1/2 left-4 lg:left-16 z-20 font-mono text-[8px] lg:text-[10px] text-[#181818]/40 tracking-wider -translate-y-1/2 hidden lg:block">
+        <div>SWISS MVT</div>
+        <div className="mt-1">MIYOTA 9015</div>
+      </div>
+
+      <div className="absolute top-1/2 right-4 lg:right-16 z-20 font-mono text-[8px] lg:text-[10px] text-[#181818]/40 tracking-wider text-right -translate-y-1/2 hidden lg:block">
+        <div>72H RESERVE</div>
+        <div className="mt-1">28,800 VPH</div>
+      </div>
+
+      <div className="absolute bottom-20 lg:bottom-24 left-4 lg:left-16 z-20 font-mono text-[8px] lg:text-[10px] text-[#181818]/40 tracking-wider">
+        <span>SAPPHIRE</span>
+        <span className="mx-1 lg:mx-2">·</span>
+        <span>10ATM</span>
+      </div>
+
+      <div className="absolute bottom-20 lg:bottom-24 right-4 lg:right-16 z-20 font-mono text-[8px] lg:text-[10px] text-[#181818]/40 tracking-wider text-right">
+        <span>REF. TLM-01</span>
+      </div>
+
+      {/* Image - Desktop: full cover, Mobile: centered */}
+      <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 lg:translate-y-0 lg:top-0 lg:inset-0">
+        <img
+          src="/montre2.png"
+          alt="TOLEM Watch"
+          className="w-full h-auto lg:h-full object-cover object-center"
+        />
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 1.2 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
+      >
+        <span className="font-mono text-[8px] lg:text-[9px] tracking-[0.2em] text-[#181818]/40 uppercase">Scroll</span>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+          className="w-px h-8 bg-gradient-to-b from-[#181818]/40 to-transparent"
+        />
+      </motion.div>
+    </section>
+  );
+}
