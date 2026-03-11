@@ -149,15 +149,14 @@ export default function Footer() {
 
         {/* Giant Watermark */}
         <div
-          className="absolute left-0 right-0 overflow-hidden pointer-events-none"
+          className="absolute left-0 right-0 overflow-hidden pointer-events-none px-10"
           style={{ bottom: '-20px' }}
         >
-          <span
-            className="font-display text-white leading-[0.8] tracking-[-0.04em] block w-full text-center"
-            style={{ fontSize: 'clamp(120px, 28vw, 400px)' }}
-          >
-            TOLEM
-          </span>
+          <img
+            src="/tolem-wordmark.svg"
+            alt="TOLEM"
+            className="w-full h-auto invert"
+          />
         </div>
       </div>
     </footer>

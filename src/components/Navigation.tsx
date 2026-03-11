@@ -84,7 +84,7 @@ export default function Navigation() {
         }`}
       >
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 flex items-center justify-between">
-          {/* Logo Placeholder */}
+          {/* Logo */}
           <motion.a
             href="#"
             onClick={(e) => handleNavClick(e, "#")}
@@ -93,7 +93,7 @@ export default function Navigation() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="relative z-10"
           >
-            <div className="w-8 h-8 bg-[#181818]" />
+            <img src="/logo.svg" alt="TOLEM" className="h-8 w-auto" />
           </motion.a>
 
           {/* Center Navigation - Desktop */}

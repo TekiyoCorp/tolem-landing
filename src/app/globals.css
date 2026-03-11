@@ -23,8 +23,8 @@
    2. TYPOGRAPHY
    ───────────────────────────────────────────────────────────── */
 @theme inline {
-  --font-display: "Outfit", system-ui, sans-serif;
-  --font-body: "Be Vietnam Pro", system-ui, sans-serif;
+  --font-display: "Blair ITC", system-ui, sans-serif;
+  --font-body: "Halenoir", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
