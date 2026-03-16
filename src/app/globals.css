@@ -9,9 +9,7 @@
    ───────────────────────────────────────────────────────────── */
 @font-face {
   font-family: "Blair ITC";
-  src: url("/fonts/blair/BlairITC-Light.woff2") format("woff2"),
-       url("/fonts/blair/BlairITC-Light.woff") format("woff"),
-       url("/fonts/blair/BlairITC-Light.ttf") format("truetype");
+  src: url("/fonts/blair/BlairITC-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -19,9 +17,7 @@
 
 @font-face {
   font-family: "Blair ITC";
-  src: url("/fonts/blair/BlairITC-Medium.woff2") format("woff2"),
-       url("/fonts/blair/BlairITC-Medium.woff") format("woff"),
-       url("/fonts/blair/BlairITC-Medium.ttf") format("truetype");
+  src: url("/fonts/blair/BlairITC-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -29,9 +25,7 @@
 
 @font-face {
   font-family: "Blair ITC";
-  src: url("/fonts/blair/BlairITC-Bold.woff2") format("woff2"),
-       url("/fonts/blair/BlairITC-Bold.woff") format("woff"),
-       url("/fonts/blair/BlairITC-Bold.ttf") format("truetype");
+  src: url("/fonts/blair/BlairITC-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
